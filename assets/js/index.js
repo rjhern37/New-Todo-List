@@ -19,6 +19,10 @@ $("#userInput").keypress(function(event){
         //input after newTodo has been entered
         $(this).val('');
         //create new li from newTodo
-        $('ul').append(`<li><span>X</span> ${newTodo}</li>`);
+        $('ul').append(`<li><span><i class="fas fa-trash-alt"></i></span> ${newTodo}</li>`);
     }
 });
+
+$(".fa-plus").click(function(){
+    $('input').fadeToggle();
+})
